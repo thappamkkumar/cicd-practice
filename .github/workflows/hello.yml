@@ -12,7 +12,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: start
-        run: echo "Workflow has started."
+        run: |
+          echo "Workflow has started."
+          touch test.txt
+          if [ -f "test.txt" ]; then
+            echo "File created"
+          else
+            echo "File doesnot created"
+          
 
       - name: completed
         run: echo "Workflow has completed" 
