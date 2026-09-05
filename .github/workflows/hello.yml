@@ -19,7 +19,7 @@ jobs:
             echo "File created"
           else
             echo "File doesnot created"
-          
+          fi
 
       - name: completed
         run: echo "Workflow has completed" 
