@@ -31,7 +31,7 @@ jobs:
         
       - name: Runnig on python
         shell: python
-        run: echo "Running on bash"
+        run: print("Running on python")
        
     #  - name: Failure Behavior
     #   run: |
