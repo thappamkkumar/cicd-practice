@@ -1,0 +1,15 @@
+name: CI Practice
+
+on:
+  push:
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: start
+        run: echo "Workflow has started."
+
+      - name: completed
+        run: echo "Workflow has completed" 
