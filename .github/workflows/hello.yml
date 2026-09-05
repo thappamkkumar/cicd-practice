@@ -25,13 +25,20 @@ jobs:
             echo "File doesnot created"
           fi
       
-      - name: Failure Behavior
-        run: |
-          echo "Brfore failure"
-          cout "fail"
-          echo "After failure"
-
-            
+      - name: Running with Bash
+        shell: bash
+        run: echo "Running on bash"
+        
+      - name: Runnig on python
+        shell: python
+        run: echo "Running on bash"
+       
+    #  - name: Failure Behavior
+    #   run: |
+    #     echo "Brfore failure"
+    #     cout "fail"
+    #     echo "After failure"
+ 
 
       - name: completed
         run: echo "Workflow has completed" 
