@@ -2,6 +2,8 @@ name: CI Practice
 
 on:
   push:
+  pull_request:
+
 
 jobs:
   health:
