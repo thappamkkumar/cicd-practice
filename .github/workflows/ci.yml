@@ -6,10 +6,7 @@ on:
       - main 
     paths-ignore:
       - 'README.md'
-  
-  push:
-    tags:
-      - 'v*'
+   
 
   pull_request:
   workflow_dispatch:
