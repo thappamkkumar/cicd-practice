@@ -3,12 +3,14 @@ name: CI Practice
 on:
   push:
     branches:
-      - main
+      - main 
+    paths-ignore:
+      - 'README.md'
+  
+  push:
     tags:
       - 'v*'
-    paths:
-      - 'app/**'
-      
+
   pull_request:
   workflow_dispatch:
   
